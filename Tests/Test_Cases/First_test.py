@@ -35,7 +35,7 @@ driver.implicitly_wait(10)
 
 raw_video = driver.stop_recording_screen()
 #video_name = driver.current_activity + time.strftime('%H%M%S')
-video_path = os.path.join("../Recordings","sample.mp4")
+video_path = os.path.join("../Recordings", "sample.mp4")
 with open(video_path,'wb') as v:
   v.write(base64.b64decode(raw_video))
 
